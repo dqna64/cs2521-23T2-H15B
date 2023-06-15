@@ -3,7 +3,7 @@
 #include <string.h>
 
 /*
-Examples
+=== Examples ===
 
    0 1 2 3 4 5 6 7
     r a c e c a r

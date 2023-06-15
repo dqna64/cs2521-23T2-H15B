@@ -49,6 +49,7 @@
 
 0 => done
 
+=== Pseudocode ===
 BinaryConversion:
         Input:  positive integer n
         Output: binary representation of n on a stack

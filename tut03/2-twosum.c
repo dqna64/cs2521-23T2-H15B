@@ -16,6 +16,7 @@
     // Cannot use single number itself
 
 === Pseudocode ===
+
 hasTwoSum(arr, val):
     Input:
         int[n] arr an array of n integers
