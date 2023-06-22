@@ -2,6 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * Run command:
+ *    $ gcc 7.c bst.c && ./a.out
+ *
+ */
+
 int bstNodeLevel(struct node *t, int key) {
   // Reached bottom of path through tree and did not find key in the path.
   if (t == NULL) {
