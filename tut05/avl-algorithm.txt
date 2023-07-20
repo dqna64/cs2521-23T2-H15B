@@ -1,0 +1,33 @@
+Pseudocode for inserting new node into AVL Tree.
+
+/**
+ * Args:
+ *      - tree: The root node of a subtree
+ *      - item: New item to insert into tree
+ * Returns:
+ *      The new root node of the subtree after inserting new item.
+ */
+insertAVL(tree, item):
+    if tree is empty:
+        return new node containing item
+    else if item = data(tree):
+        return tree
+    
+    if item < data(tree):
+        tree->left = insertAVL(tree->left, item)
+    else if item > data(tree):
+        tree->right = insertAVL(tree->right, item)
+
+    LHeight = height(tree->left)
+    RHeight = height(tree->right)
+
+    if (LHeight - RHeight) > 1:
+        if item > data(tree->left):
+            tree->left = rotateLeft(tree->left)
+        tree = rotatetree->right
+    else if (RHeight - LHeight) > 1:
+        if item < data(tree->right) then
+            tree->right = rotateRight(tree->right)
+        tree = rotatetree->left
+
+    return tree
